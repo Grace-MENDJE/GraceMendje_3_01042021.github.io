@@ -1,0 +1,86 @@
+/*Responsive*/
+.entete {
+  display: flex;
+  width: 100%;
+  margin-bottom: 7%;
+}
+@media only screen and (max-width:375px) {
+  .entete {
+    display: flex;
+    width: 100%;
+  }
+}
+.entete__logo {
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.pagedaccueil {
+  width: 100%;
+}
+@media only screen and (max-width:375px) {
+  .pagedaccueil {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.locatisation {
+  display: flex;
+  justify-content: center;
+  /*box-shadow: 2px 2px 2px 2px $grise;*/
+  background-color: #e5e5e2;
+}
+@media only screen and (max-width:375px) {
+  .locatisation {
+    display: flex;
+    width: 100%;
+  }
+}
+.locatisation__icon {
+  width: 10%;
+  padding-top: 1%;
+}
+.locatisation__icon--fas {
+  font-size: 1.5rem;
+  margin-top: 58%;
+  margin-left: -35%;
+}
+.locatisation__texte {
+  font-size: 1.5rem;
+}
+
+.exploration {
+  background-color: #fdf7f1;
+  margin-top: -7%;
+}
+.exploration__titre {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 8%;
+  width: 80%;
+  margin-left: 10%;
+}
+.exploration__texte {
+  text-align: center;
+  font-size: 20px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.exploration__btn {
+  width: 80%;
+  font-size: 19px;
+  margin-left: 10%;
+  height: 4rem;
+  margin-top: 10%;
+  margin-bottom: 25%;
+  padding: 5%;
+  background-color: #df90e8;
+  border-radius: 55px;
+  border: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+.entete{
+    display: flex;
+    width: 100%;
+    margin-bottom: 7%;
+    @include iphone-only;
+        &__logo{
+            display: flex;
+            width: 60%;
+            margin-left: 20%;
+        }
+}

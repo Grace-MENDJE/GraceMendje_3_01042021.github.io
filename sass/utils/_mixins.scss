@@ -1,0 +1,6 @@
+@mixin iphone-only{
+    @media  #{$iphone}{ 
+        display: flex;
+        width: 100%;       
+    }    
+}

@@ -1,11 +1,19 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch sass/main.scss:public/css/style.css"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Grâce MENDJE",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grace-MENDJE/GraceMendje_3_01042021.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grace-MENDJE/GraceMendje_3_01042021.github.io/issues"
+  },
+  "homepage": "https://github.com/Grace-MENDJE/GraceMendje_3_01042021.github.io#readme",
+  "description": ""
 }
