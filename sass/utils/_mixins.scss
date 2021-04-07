@@ -4,3 +4,23 @@
         width: 100%;       
     }    
 }
+
+@mixin btnfonctionnement {
+    display: flex;
+        width: 90%;
+        border-radius: 50px;
+        background-color: lighten($beige, 35);
+        margin-left: 5%;
+        border: none;
+        margin-bottom: 10%;
+}
+
+@mixin fonctionnementIcon {
+    width: 10%;
+    margin-top: 2%;
+    font-size: 22px;
+    margin-top: 8%;
+    margin-right: 2%;
+    margin-right: 2%;
+    margin-left: 10%;    
+}

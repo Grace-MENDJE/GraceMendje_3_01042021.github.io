@@ -17,6 +17,8 @@
 }
 
 .pagedaccueil {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 @media only screen and (max-width:375px) {
@@ -81,6 +83,115 @@
   border-radius: 55px;
   border: none;
   color: white;
+}
+
+.fonctionnement {
+  margin-left: 5%;
+}
+.fonctionnement__titre {
+  font-size: 20px;
+}
+.fonctionnement__choix {
+  display: flex;
+  width: 90%;
+  border-radius: 50px;
+  background-color: #fdf7f1;
+  margin-left: 5%;
+  border: none;
+  margin-bottom: 10%;
+}
+.fonctionnement__choix--fas {
+  width: 10%;
+  margin-top: 2%;
+  font-size: 22px;
+  margin-top: 8%;
+  margin-right: 2%;
+  margin-right: 2%;
+  margin-left: 10%;
+}
+.fonctionnement__choix--texte {
+  font-size: 20px;
+}
+.fonctionnement__menu {
+  display: flex;
+  width: 90%;
+  border-radius: 50px;
+  background-color: #fdf7f1;
+  margin-left: 5%;
+  border: none;
+  margin-bottom: 10%;
+}
+.fonctionnement__menu--fas {
+  width: 10%;
+  margin-top: 2%;
+  font-size: 22px;
+  margin-top: 8%;
+  margin-right: 2%;
+  margin-right: 2%;
+  margin-left: 10%;
+}
+.fonctionnement__menu--texte {
+  font-size: 20px;
+}
+.fonctionnement__degustation {
+  display: flex;
+  width: 90%;
+  border-radius: 50px;
+  background-color: #fdf7f1;
+  margin-left: 5%;
+  border: none;
+  margin-bottom: 10%;
+}
+.fonctionnement__degustation--fas {
+  width: 10%;
+  margin-top: 2%;
+  font-size: 22px;
+  margin-top: 8%;
+  margin-right: 2%;
+  margin-right: 2%;
+  margin-left: 10%;
+}
+.fonctionnement__degustation--texte {
+  font-size: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant__title {
+  margin-left: 5%;
+  margin-top: 15%;
+}
+
+.restaurant {
+  width: 100%;
+  background-color: #e5e5e2;
+}
+.restaurant__card {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.restaurant__card--image {
+  width: 100%;
+}
+.restaurant__card--img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__card--content {
+  display: flex;
+  background-color: white;
+  text-decoration: none;
+  margin-top: -1%;
+  margin-bottom: 5%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
