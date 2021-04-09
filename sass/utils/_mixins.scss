@@ -5,11 +5,29 @@
     }    
 }
 
+@mixin btnExploration {
+    width: 80%;
+    font-size: 19px;
+    margin-left: 10%;
+    height: 4rem;
+    margin-top: 10%;
+    margin-bottom: 25%;
+    padding: 5%;
+    background-color: lighten( $voiletrosatre, 20);
+    border-radius: 55px;
+    border: none;
+    color: white;
+    @media #{$mobile} {
+        font-size: 30px;
+        padding-bottom: 12%;        
+    }      
+}
+
 @mixin btnfonctionnement {
     display: flex;
         width: 90%;
-        border-radius: 50px;
-        background-color: lighten($beige, 35);
+        border-radius: 20px;
+        background-color: $grise;
         margin-left: 5%;
         border: none;
         margin-bottom: 10%;
@@ -21,6 +39,12 @@
     font-size: 22px;
     margin-top: 8%;
     margin-right: 2%;
-    margin-right: 2%;
-    margin-left: 10%;    
+    margin-right: 5%;
+    margin-left: 5%;    
 }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+

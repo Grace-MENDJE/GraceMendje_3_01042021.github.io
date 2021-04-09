@@ -7,6 +7,8 @@
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="https://kit.fontawesome.com/754610bc5b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="pagedaccueil">
@@ -32,9 +34,8 @@
         <section class="fonctionnement">
             <h1 class="fonctionnement__titre">Fonctionnement</h1>
             <button class="fonctionnement__choix">
-                <div class="fonctionnement__choixIcon"></div>
                 <i class="fonctionnement__choix--fas fas fa-mobile-alt"></i>
-                <p class="fonctionnement__choix--texte">choisissez un restaurant</p>
+                <p class="fonctionnement__choix--texte">Choisissez un restaurant</p>
             </button>
             <button class="fonctionnement__menu">
                 <i class="fonctionnement__menu--fas fas fa-list-ul"></i>
@@ -55,11 +56,13 @@
                         alt="photo du restaurant la palette du goût">
                     </div>
                     <div class="restaurant__card--content">
-                        <div>
+                        <div class="card-content--textes">
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
                         </div>
-                        <div><i class="fas fa-heart"></i></div>      
+                        <div class="card-content--icons">
+                            <i class="far fa-heart"></i>
+                        </div>      
                         
                     </div>
                 </a>
@@ -73,11 +76,13 @@
                         alt="photo du restaurant la palette du goût">
                     </div>
                     <div class="restaurant__card--content">
-                        <div>
+                        <div class="card-content--textes">
                             <h3>La note enchantée</h3>
                             <p>Charonne</p>
                         </div>
-                        <div><i class="fas fa-heart"></i></div>
+                        <div class="card-content--icons">
+                            <i class="far fa-heart"></i>
+                        </div>
                     </div>
                 </a>           
             </div>
@@ -90,11 +95,13 @@
                         alt="photo du restaurant la palette du goût">
                     </div>
                     <div class="restaurant__card--content">
-                        <div>
+                        <div class="card-content--textes">
                             <h3>A la Française</h3>
                             <p>Cité Rouge</p>
                         </div>
-                        <div><i class="fas fa-heart"></i></div>                  
+                        <div class="card-content--icons">
+                            <i class="far fa-heart"></i>
+                        </div>                  
                     </div>
                 </a>
             </div>
@@ -107,31 +114,61 @@
                         alt="photo du restaurant la palette du goût">
                     </div>
                     <div class="restaurant__card--content">
-                        <div>
+                        <div class="card-content--textes">
                             <h3>Le délice des sens</h3>
                             <p>Folie-Méricourt</p>
                         </div>
-                        <div><i class="fas fa-heart"></i></div>
+                        <div class="card-content--icons">
+                            <i class="far fa-heart"></i>
+                        </div>
                     </div>
                 </a>            
             </div>
         </section>
-    
+
         <footer>
-            <a href="accueil.html">
-                <img src="./public/images/logo/ohmyfood.png" alt="">
+            <a href="index.html">
+                <h3 class="footer__title">ohmyfood</h3>
             </a>
-            <div>
+
+            <div class="footer__footer">
                 <a href="#">
-                    <i class="fas fa-utensils"></i>Proposer un restaurant
+                    <div class="footer__content">
+                        <div class="footer__content--icons">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="footer__content--textes">
+                            <p>Proposer un restaurant</p>
+                        </div>  
+                    </div>
                 </a>
-                <a href="">
-                    <i class="fas fa-hands-helping"></i>Devenir Partenaire
+
+                <a href="/#">
+                    <div class="footer__content">
+                        <div class="footer__content--icons">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="footer__content--textes">
+                            <p>Devenir Partenaire</p>
+                        </div> 
+                    </div>                
                 </a>
-                <a href="">Mentions légales</a>
-                <a href="">Contact</a>
+
+                <a href="#">
+                    <div class="footer__content">
+                        <p class="footer__content--textes">Mentions légales</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="footer__content">
+                        <p class="footer__content--textes">Contact</p>
+                    </div>               
+                    
+                </a>      
             </div>
         </footer>
+
     </div>
 </body>
 </html>
