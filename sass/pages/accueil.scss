@@ -163,8 +163,7 @@ a:link{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             @media #{$mobile} {
-                height: 15rem;
-                object-position: bottom;                
+                height: 25rem;                
             }
         }
 

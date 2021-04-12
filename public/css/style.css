@@ -6,6 +6,11 @@
   margin-bottom: 7%;
   margin-top: 5%;
 }
+.entete__icon {
+  margin-left: 9%;
+  margin-top: 3%;
+  color: black;
+}
 .entete__logo {
   display: flex;
   width: 60%;
@@ -141,9 +146,9 @@ a:link {
   }
 }
 .exploration__btn {
-  width: 80%;
+  width: 70%;
   font-size: 19px;
-  margin-left: 10%;
+  margin-left: 15%;
   height: 4rem;
   margin-top: 10%;
   margin-bottom: 25%;
@@ -309,8 +314,7 @@ a:link {
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .restaurant__card--img {
-    height: 15rem;
-    object-position: bottom;
+    height: 25rem;
   }
 }
 .restaurant__card--content {
@@ -355,7 +359,7 @@ a:link {
   color: black;
 }
 
-.alafrancais {
+.alafrancaise {
   width: 100%;
 }
 
@@ -368,17 +372,81 @@ a:link {
 }
 .cardentete__img {
   width: 100%;
+  height: 16rem;
+  object-fit: cover;
 }
 
-.body {
+.main {
   background-color: #f7f7f7;
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-.body__title {
+.main__entete {
+  display: flex;
+  width: 100%;
+}
+.main__entete--title {
   font-family: "Shrikhand", cursive;
-  margin-top: 5%;
+  margin-top: -7%;
+  padding-top: 15%;
+  padding-left: 4%;
+}
+.main__entete--icons {
+  font-size: 25px;
+  margin-left: 35%;
+  margin-top: 9%;
+}
+
+.menu {
+  margin-bottom: 10%;
+}
+.menu__title {
+  margin-left: 3%;
+}
+.menu__content {
+  background-color: white;
+  border-radius: 20px;
+  width: 94%;
+  margin-left: 3%;
+}
+.menu__content--title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8%;
+  padding-top: 5%;
+}
+.menu__content--textes {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__content--texte {
+  margin-left: 8%;
+}
+.menu__content--prix {
+  margin-right: 7%;
+}
+
+.btn {
+  width: 70%;
+  font-size: 19px;
+  margin-left: 15%;
+  height: 4rem;
+  margin-top: 10%;
+  margin-bottom: 25%;
+  padding: 5%;
+  background-color: #df90e8;
+  border-radius: 55px;
+  border: none;
+  color: white;
+  width: 60%;
+  margin-left: 20%;
+}
+@media only screen and (min-width:376px) and (max-width:599px) {
+  .btn {
+    font-size: 30px;
+    padding-bottom: 12%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
