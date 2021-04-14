@@ -18,9 +18,29 @@
     border: none;
     color: white;
     @media #{$mobile} {
-        font-size: 30px;
+        font-size: 20px;
         padding-bottom: 12%;        
-    }      
+    }  
+    @media #{$tablette}{
+        font-size: 29px;
+        padding-bottom: 4rem;
+    }
+    @media #{$desktop}{
+        font-size: 35px;
+        height: 8rem;
+    }  
+    @media #{$interdesktop}{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 35px;
+        height: 9rem;
+    }
+    @media #{$lgdesktop}{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 35px;
+        height: 10rem;
+    }  
 }
 
 @mixin btnfonctionnement {
@@ -31,6 +51,9 @@
         margin-left: 5%;
         border: none;
         margin-bottom: 10%;
+        @media #{$desktop}{
+            padding-left: 12%;
+        }
 }
 
 @mixin fonctionnementIcon {

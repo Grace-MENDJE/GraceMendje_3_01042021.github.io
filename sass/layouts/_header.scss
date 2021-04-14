@@ -3,21 +3,44 @@
     width: 100%;
     margin-bottom: 7%;
     margin-top: 5%;
-    &__icon{
-        margin-left: 9%;
-        margin-top: 3%;
-        color: black;
+    @media #{$mobile}{
+        width: 70%;
+        margin-left: 15%;
     }
+    @media #{$tablette}{
+        margin-left: 6%;
+    }
+    @media #{$desktop}{
+        margin-left: 27%;
+    }
+    @media #{$interdesktop} {
+        margin-left: 25%;
+    }
+    @media #{$lgdesktop} {
+        margin-left: 25%;
+    }
+   
         &__logo{
             display: flex;
             width: 60%;
             margin-left: 20%;
+            @media #{$mobile}{ 
+                width: 80%;
+                margin-left: 10%;               
+            }
+            @media #{$tablette}{
+                width: 100%;
+            }
+            @media #{$desktop} {
+                width: 100%;
+                margin-left: 3%;
+            }
+            @media #{$interdesktop}{
+                width: 100%;
+            }
+            @media #{$lgdesktop}{
+                width: 100%;
+                margin-left: 30%;
+            }
         }
 }
-
-@media #{$mobile}{
-    .entete {
-        width: 74%;
-        margin-left: 13%;
-    } 
-}   
