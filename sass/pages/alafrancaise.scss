@@ -4,6 +4,8 @@
 
 .cardalafrancaise{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardentete{
@@ -16,10 +18,13 @@
 }
 
 .main{
+    display: flex;
+    flex-direction: column;
     background-color: $grise;
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    margin-top: -15%;
     &__entete{
         display: flex;
         width: 100%;
@@ -28,10 +33,11 @@
             margin-top: -7%;
             padding-top: 15%;
             padding-left: 4%;
+            font-size: 25px;
+            width: 80%;
         }
         &--icons{
             font-size: 25px;
-            margin-left: 35%;
             margin-top: 9%;
         }
     }
@@ -42,6 +48,11 @@
     &__title{
         margin-left: 3%;
     }
+    &__border{
+        border:3px solid $tertiaire;
+        width: 12%;
+        margin-left: 3%;
+    }
     &__content{
         background-color: $couleurBlanche;
         border-radius: 20px;
@@ -49,13 +60,15 @@
         margin-left: 3%;
         &--title{
             font-size: 18px;
-            font-weight: bold;
+            font-weight: bolder;
             margin-left: 8%;
             padding-top: 5%;
         }
         &--textes{
             display: flex;
             justify-content: space-between;
+            margin-top: -8%;
+            
         }
         &--texte{
             margin-left: 8%;
@@ -63,6 +76,7 @@
         }
         &--prix{
             margin-right: 7%;
+            font-weight: bold;
         }
     }
 }

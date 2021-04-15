@@ -43,4 +43,14 @@
                 margin-left: 30%;
             }
         }
+        &__icon{
+            font-size: 25px;
+            margin-left: 6%;
+            margin-right: -5%;
+            margin-top: 1%;
+            color: $couleurNoire;
+            @media #{$mobile}{
+                margin-top: 3%;
+            }
+        }
 }

@@ -153,7 +153,8 @@
     }
     @media #{$lgdesktop}{
         width:50%
-    }
+    }    
+   
     &__titre{
         font-size: 25px;
         font-family: $roboto;
@@ -168,10 +169,28 @@
             font-size: 40px;
         }
     }
-    &__choix{
+    &__btn{
         @include btnfonctionnement;
+        display: flex;
+        &:hover{
+            background-color: lighten(#211829, 75);            
+        }
+        &--nombre{
+            font-family: $roboto;
+            background-color: lighten(#211829, 40);
+            color: $couleurBlanche;
+            height: 10%;
+            border-radius: 50px;
+            padding: 4px 9px;
+            margin-left: -6%;
+            margin-top: 6%;
+        } 
         &--fas{
             @include fonctionnementIcon;
+            color: lighten($couleurNoire,50);
+            &:hover{
+                color: lighten(#211829, 40);
+            }
             @media #{$mobile} {
                 font-size: 25px;
                 margin-top: 7%;                
@@ -213,104 +232,9 @@
             @media #{$lgdesktop}{
                 font-size: 30px;
             }
-        }   
+        } 
             
     }
-
-    &__menu{
-        @include btnfonctionnement;
-        &--fas{
-            @include fonctionnementIcon;
-            @media #{$mobile} {
-                font-size: 25px;
-                margin-top: 7%;                
-            }
-            @media #{$tablette}{
-                font-size: 2rem;
-                margin-top: 5%;
-            }
-            @media #{$desktop}{
-                font-size: 2rem;
-                margin-top: 5%;
-            }
-            @media #{$interdesktop}{
-                font-size: 30px;
-                margin-top: 6%;
-            }
-            @media #{$lgdesktop}{
-                font-size: 40px;
-                margin-top: 4%;
-            }
-        } 
-        &--texte{
-            font-size: 20px;
-            font-family: $roboto;
-            @media #{$mobile} {
-                font-size: 20px;                
-            }
-            @media #{$tablette}{
-                font-size: 25px;
-                margin-top: 5%;
-            }
-            @media #{$desktop}{
-                font-size: 30px;
-            }
-            @media #{$interdesktop}{
-                font-size: 30px;
-            }
-            @media #{$lgdesktop}{
-                font-size: 30px;
-            }
-        }  
-    }
-
-    &__degustation{
-        @include btnfonctionnement;
-        &--fas{
-            @include fonctionnementIcon;
-            @media #{$mobile} {
-                font-size: 25px;
-                margin-top: 7%;                
-            }
-            @media #{$tablette}{
-                font-size: 2rem;
-                margin-top: 5%;
-            }
-            @media #{$desktop}{
-                font-size: 2rem;
-                margin-top: 5%;
-            }
-            @media #{$interdesktop}{
-                font-size: 30px;
-                margin-top: 6%;
-            }
-            @media #{$lgdesktop}{
-                font-size: 40px;
-                margin-top: 4%;
-            }
-        } 
-        &--texte{
-            font-size: 20px;
-            font-family: $roboto;
-            @media #{$mobile} {
-                font-size: 20px;                
-            }
-            @media #{$tablette}{
-                font-size: 25px;
-                margin-top: 5%;
-            }
-            @media #{$desktop}{
-                font-size: 30px;
-            }
-            @media #{$interdesktop}{
-                font-size: 30px;
-            }
-            @media #{$lgdesktop}{
-                font-size: 30px;
-            }
-        } 
-    }
-    
 }
 
 a:link{
@@ -327,7 +251,7 @@ a:link{
     @media #{$tablette}{
         font-size: 30px;
     }
-    @media #{$desktop} {
+    @media #{$desktop},#{$interdesktop},#{$lgdesktop} {
         font-size: 40px;
     }
 }
@@ -335,6 +259,7 @@ a:link{
 .restaurant{
     width: 100%;
     background-color: $grise;
+    padding-bottom: 20%;
     &__cards{
         @media #{$desktop} {
             display: grid;
@@ -354,11 +279,46 @@ a:link{
         margin-left: 5%;
         margin-top: 10%;
         &--image{
+            display: flex;
             width: 100%;
+        }
+        &--bull{
+            font-family: $roboto;
+            background-color: $tertiaire;
+            padding: 3%;
+            padding-right: 3%;
+            padding-left: 3%;
+            height: 9%;
+            font-size: 90%;
+            margin-left: -30%;
+            margin-top: 5%;
+            border-radius: 3px;
+            padding-left: 5%;
+            padding-right: 5%;
+            @media #{$mobile}{
+                font-size: 100%;
+                padding: 4%, 5%;
+                margin-left: -34%;
+                margin-top: 20%;
+            }
+            @media #{$tablette}{
+                font-size: 22px;
+            }
+            @media #{$desktop}{
+                font-size: 20px;
+                margin-left: -33%;
+                margin-top: 19%;
+            }
+            @media #{$interdesktop},#{$lgdesktop} {
+                font-size: 25px;
+                margin-left: -33%;
+                margin-top: 20%;
+            }
+            
         }
         &--img{
             width: 100%;
-            height: 13rem;
+            height: 9rem;
             object-fit: cover;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
@@ -394,7 +354,7 @@ a:link{
 .card-content{
     &--textes{
         margin-left: 4%;
-        font-size: 16px;
+        font-size: 15px;
         width: 80%;
         @media #{$mobile}{
             width: 80%;
