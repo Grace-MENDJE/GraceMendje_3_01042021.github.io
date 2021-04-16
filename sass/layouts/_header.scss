@@ -11,13 +11,13 @@
         margin-left: 6%;
     }
     @media #{$desktop}{
-        margin-left: 27%;
+        margin-left: 8%;
     }
     @media #{$interdesktop} {
-        margin-left: 25%;
+        margin-left: 10%;
     }
     @media #{$lgdesktop} {
-        margin-left: 25%;
+        margin-left: 15%;
     }
    
         &__logo{
@@ -52,5 +52,23 @@
             @media #{$mobile}{
                 margin-top: 3%;
             }
+            @media #{$tablette}{
+                margin-top: 4%;
+                font-size: 32px;
+                margin-left: 0%;
+            }
+            @media #{$desktop}{
+                font-size: 25px;
+                margin-left: 6%;
+                margin-right: 5%;
+                margin-top: 3%;
+            }
+            @media #{$interdesktop},#{$lgdesktop} {
+                font-size: 35px;
+                margin-left: 6%;
+                margin-right: 5%;
+                margin-top: 2%;
+            }
+            
         }
 }

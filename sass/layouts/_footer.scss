@@ -62,10 +62,14 @@ footer{
                 font-size: 2rem;
                 margin-top: 4%;
             }
-            @media #{$interdesktop},#{$lgdesktop}{
+            @media #{$interdesktop}{
                 font-size: 30px;
                 margin-top: 3%;
             }
+            @media #{$lgdesktop}{
+                font-size: 30px;
+                margin-top: 2%;
+            } 
         }
        
     }

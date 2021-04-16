@@ -1,0 +1,229 @@
+.alafrancaise{
+    width: 100%;
+}
+
+.cardalafrancaise{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardentete{
+    width:100%;
+    &__img{
+        width:100%;
+        height: 16rem;
+        object-fit: cover;
+        @media #{$mobile}{
+            height: 28rem;
+        }
+        @media #{$tablette}{
+            height: 30rem;
+        }
+        @media #{$desktop}{
+            height: 50rem;
+        }
+        @media #{$lgdesktop},#{$interdesktop} {
+            height: 73rem;
+        }
+    }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: $grise;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -15%;
+    @media #{$mobile}{
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    @media #{$tablette}{
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    @media #{$desktop}{
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+    }
+    @media #{$lgdesktop},#{$interdesktop} {
+        border-top-left-radius: 78px;
+        border-top-right-radius: 78px;
+    }
+    &__entete{
+        display: flex;
+        width: 100%;
+        &--title{
+            font-family: $Shrikhand;
+            margin-top: -7%;
+            padding-top: 15%;
+            padding-left: 4%;
+            font-size: 24px;
+            width: 80%;
+            @media #{$mobile}{
+                font-size: 25px;
+            }
+            @media #{$tablette}{
+                font-size: 30px;
+            }
+            @media #{$desktop}{
+                font-size: 40px;
+            }
+            @media #{$interdesktop}{
+                font-size: 45px;
+            }
+            @media #{$lgdesktop}{
+                font-size: 50px;
+            }
+        }
+        &--icons{
+            font-size: 24px;
+            margin-top: 9%;
+            @media #{$tablette}{
+                font-size: 25px;
+            }
+            @media #{$tablette}{
+                font-size: 30px;
+            }
+            @media #{$desktop}{
+                font-size: 40px;
+            }
+            @media #{$interdesktop}{
+                font-size: 45px;
+            }
+            @media #{$lgdesktop}{
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+.menu{
+    margin-bottom: 10%;
+    &__title{
+        margin-left: 3%;
+        @media #{$tablette}{
+            font-size: 20px;
+        } 
+        @media #{$desktop}{
+            font-size: 23px;
+        }
+        @media #{$interdesktop}{
+            font-size: 26px;
+        }
+        @media #{$lgdesktop}{
+            font-size: 28px;
+        }
+
+    }
+    &__border{
+        border:3px solid $tertiaire;
+        width: 12%;
+        margin-left: 3%;
+        @media #{$mobile}{
+            width: 8%;
+        }
+        @media #{$tablette}{
+            width: 9%;
+        }
+        @media #{$desktop},#{$interdesktop} {
+            width: 6%;
+        }
+        @media #{$lgdesktop}{
+            width: 5%;
+        }
+    }
+    &__content{
+        background-color: $couleurBlanche;
+        border-radius: 20px;
+        width: 94%;
+        margin-left: 3%;
+        &--title{
+            width: 100%;
+            font-size: 18px;
+            font-weight: bolder;
+            margin-left: 8%;
+            padding-top: 5%;
+            @media #{$mobile}{
+                font-size: 18px;
+                padding-top: 3%;
+            }
+            @media #{$tablette}{
+                font-size: 23px;
+                padding-top: 2%;
+            }
+            @media #{$desktop},#{$interdesktop} {
+                font-size: 27px;
+                padding-top: 2%;
+            }
+            @media #{$lgdesktop} {
+                font-size: 30px;
+                padding-top: 1%;
+            }
+        }
+        &--textes{
+            display: flex;
+            justify-content: space-between;
+            margin-top: -8%;
+            width: 95%; 
+            @media #{$mobile}{
+                margin-top: -4%;
+            } 
+            @media #{$tablette}{
+                margin-top: -5%;
+            }
+            @media #{$desktop}{
+                margin-top: -5%;
+            } 
+            @media #{$interdesktop}{
+                margin-top: -3%;
+            }  
+            @media #{$lgdesktop}{
+                margin-top: -3%;
+            }           
+        }
+        &--texte{
+            margin-left: 8%;
+            font-family: $roboto;
+            font-size: 14px;
+            @media #{$mobile}{
+                font-size: 15px;
+            }
+            @media #{$tablette}{
+                font-size: 22px;
+            }
+            @media #{$desktop},#{$interdesktop}{
+                font-size: 25px;
+            }
+
+            @media #{$lgdesktop}{
+                font-size: 30px;
+            }
+        }
+        &--prix{
+            margin-right: 2%;
+            font-weight: bold;
+            @media #{$mobile}{
+                font-size: 15px;
+            }
+            @media #{$tablette}{
+                font-size: 22px;
+            }
+            @media #{$desktop},#{$interdesktop} {
+                font-size: 25px;
+            } 
+            @media #{$lgdesktop}{
+                font-size: 30px;
+            } 
+        }
+    }
+}
+
+.btn{
+    @include btnExploration ;
+    width: 60%;
+    margin-left: 20%;
+}
