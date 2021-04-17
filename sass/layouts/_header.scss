@@ -4,20 +4,22 @@
     margin-bottom: 7%;
     margin-top: 5%;
     @media #{$mobile}{
-        width: 70%;
-        margin-left: 15%;
-    }
+        width: 100%;
+    } 
     @media #{$tablette}{
         margin-left: 6%;
     }
     @media #{$desktop}{
-        margin-left: 8%;
+        display: flex;
+        justify-content: center;
     }
     @media #{$interdesktop} {
-        margin-left: 10%;
+        display: flex;
+        justify-content: center;
     }
     @media #{$lgdesktop} {
-        margin-left: 15%;
+        display: flex;
+        justify-content: center;
     }
    
         &__logo{
@@ -25,29 +27,28 @@
             width: 60%;
             margin-left: 20%;
             @media #{$mobile}{ 
-                width: 80%;
-                margin-left: 10%;               
+                width: 60%;               
             }
             @media #{$tablette}{
                 width: 100%;
             }
             @media #{$desktop} {
                 width: 100%;
-                margin-left: 3%;
+                margin-left: 1%;
             }
             @media #{$interdesktop}{
                 width: 100%;
+                margin-left: 1%;
             }
             @media #{$lgdesktop}{
                 width: 100%;
-                margin-left: 30%;
+                margin-left: 0%;
             }
         }
         &__icon{
-            font-size: 25px;
-            margin-left: 6%;
-            margin-right: -5%;
-            margin-top: 1%;
+            font-size: 21px;
+            margin-left: 5%;
+            margin-top: 2%;
             color: $couleurNoire;
             @media #{$mobile}{
                 margin-top: 3%;
@@ -59,15 +60,19 @@
             }
             @media #{$desktop}{
                 font-size: 25px;
-                margin-left: 6%;
-                margin-right: 5%;
                 margin-top: 3%;
             }
             @media #{$interdesktop},#{$lgdesktop} {
                 font-size: 35px;
-                margin-left: 6%;
+                margin-left: 0%;
                 margin-right: 5%;
                 margin-top: 2%;
+            }
+            @media #{$lgdesktop} {
+                font-size: 35px;
+                margin-left: 0%;
+                margin-right: 5%;
+                margin-top: 1.5%;
             }
             
         }

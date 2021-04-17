@@ -10,9 +10,11 @@
     background-color: darken($grise, 5);
     margin-bottom: 15%;
     &__icon{
+        display: flex; 
         padding-top: 7%;
         @media #{$mobile}{
             padding-top: 7%;
+            margin-right: -6%;
         }
         @media #{$tablette}{
             padding-top: 4%;
@@ -28,7 +30,7 @@
         }
         @media #{$lgdesktop}{
             padding-top: 3%;
-            margin-left: 307px;
+            margin-left: 30%;
         }
         &--fas{
             font-size: 1.5rem;

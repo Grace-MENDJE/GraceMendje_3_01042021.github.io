@@ -8,8 +8,7 @@
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .entete {
-    width: 70%;
-    margin-left: 15%;
+    width: 100%;
   }
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
@@ -19,17 +18,20 @@
 }
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .entete {
-    margin-left: 8%;
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .entete {
-    margin-left: 10%;
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width:1401px) {
   .entete {
-    margin-left: 15%;
+    display: flex;
+    justify-content: center;
   }
 }
 .entete__logo {
@@ -39,8 +41,7 @@
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .entete__logo {
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
   }
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
@@ -51,25 +52,25 @@
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .entete__logo {
     width: 100%;
-    margin-left: 3%;
+    margin-left: 1%;
   }
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .entete__logo {
     width: 100%;
+    margin-left: 1%;
   }
 }
 @media only screen and (min-width:1401px) {
   .entete__logo {
     width: 100%;
-    margin-left: 30%;
+    margin-left: 0%;
   }
 }
 .entete__icon {
-  font-size: 25px;
-  margin-left: 6%;
-  margin-right: -5%;
-  margin-top: 1%;
+  font-size: 21px;
+  margin-left: 5%;
+  margin-top: 2%;
   color: black;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
@@ -87,17 +88,23 @@
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .entete__icon {
     font-size: 25px;
-    margin-left: 6%;
-    margin-right: 5%;
     margin-top: 3%;
   }
 }
 @media only screen and (min-width:1100px) and (max-width:1400px), only screen and (min-width:1401px) {
   .entete__icon {
     font-size: 35px;
-    margin-left: 6%;
+    margin-left: 0%;
     margin-right: 5%;
     margin-top: 2%;
+  }
+}
+@media only screen and (min-width:1401px) {
+  .entete__icon {
+    font-size: 35px;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-top: 1.5%;
   }
 }
 
@@ -223,11 +230,13 @@ a:link {
   margin-bottom: 15%;
 }
 .locatisation__icon {
+  display: flex;
   padding-top: 7%;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .locatisation__icon {
     padding-top: 7%;
+    margin-right: -6%;
   }
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
@@ -251,7 +260,7 @@ a:link {
 @media only screen and (min-width:1401px) {
   .locatisation__icon {
     padding-top: 3%;
-    margin-left: 307px;
+    margin-left: 30%;
   }
 }
 .locatisation__icon--fas {
