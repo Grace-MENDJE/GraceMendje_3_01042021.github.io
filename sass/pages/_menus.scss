@@ -1,5 +1,6 @@
-.alafrancaise{
-    width: 100%;
+.menu{
+    width: 90%;
+    margin-left: 5%;
 }
 
 .cardalafrancaise{
@@ -101,6 +102,10 @@
     }
 }
 
+.menugroupe{
+    display: flex;
+}
+
 .menu{
     margin-bottom: 10%;
     &__title{
@@ -138,9 +143,19 @@
     }
     &__content{
         background-color: $couleurBlanche;
-        border-radius: 20px;
-        width: 94%;
+        width: 70%;
         margin-left: 3%;
+        border-bottom-left-radius: 20px; 
+        border-top-left-radius: 20px;
+        opacity: 0;
+        animation: menu-loading 1000ms 1000ms;        
+        &:active + .checkbox {
+            transform: scale(1);
+            transform: rotate(0deg);
+            span {
+                transform: translateY(0);
+            }
+        }    
         &--title{
             width: 100%;
             font-size: 18px;
@@ -221,6 +236,27 @@
         }
     }
 }
+
+.checkbox{
+    font-size: 80px;
+    background-color: $tertiaire;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    transform: scale(.1);
+    transform: rotate(-90deg);
+    transition: transform 330ms ease-in-out;
+}
+span {
+    transform: translateY(250%);
+    transition: transform 280ms ease-out 50ms;
+    display: block;
+} 
 
 .btn{
     @include btnExploration ;

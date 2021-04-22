@@ -1,0 +1,11 @@
+@keyframes menu-loading{
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    75%,100%{
+        opacity: 1;
+    }
+}

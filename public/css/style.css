@@ -1,5 +1,16 @@
 @charset "UTF-8";
 /*Responsive*/
+@keyframes menu-loading {
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75%, 100% {
+    opacity: 1;
+  }
+}
 .entete {
   display: flex;
   width: 100%;
@@ -219,7 +230,8 @@ a:link {
 .pagedaccueil {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .locatisation {
@@ -296,7 +308,7 @@ a:link {
   }
 }
 .locatisation__texte {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   width: 50%;
   margin-left: 5%;
@@ -584,7 +596,7 @@ a:link {
   }
 }
 .fonctionnement__btn--texte {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
@@ -792,11 +804,31 @@ a:link {
 .card-content--icons {
   font-size: 25px;
   margin-top: 6%;
+  position: relative;
+  z-index: 1;
+  /* &:hover{
+       color: $primaire;
+       font-family: 'font Awesome 5 free';
+       content: '';
+   }*/
 }
 .card-content--icons:hover {
-  color: #9356DC;
+  color: #c73cd6;
+}
+.card-content--icons:hover .motema {
+  opacity: 1;
+}
+.card-content--icons .motema {
   font-family: "font Awesome 5 free";
   content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #c73cd6;
+  opacity: 0;
+  z-index: -1;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .card-content--icons {
@@ -832,8 +864,13 @@ a:link {
   color: black;
 }
 
-.alafrancaise {
-  width: 100%;
+.motema {
+  color: #c73cd6;
+}
+
+.menu {
+  width: 90%;
+  margin-left: 5%;
 }
 
 .cardalafrancaise {
@@ -971,6 +1008,10 @@ a:link {
   }
 }
 
+.menugroupe {
+  display: flex;
+}
+
 .menu {
   margin-bottom: 10%;
 }
@@ -1024,9 +1065,19 @@ a:link {
 }
 .menu__content {
   background-color: white;
-  border-radius: 20px;
-  width: 94%;
+  width: 70%;
   margin-left: 3%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  opacity: 0;
+  animation: menu-loading 1000ms 1000ms;
+}
+.menu__content:active + .checkbox {
+  transform: scale(1);
+  transform: rotate(0deg);
+}
+.menu__content:active + .checkbox span {
+  transform: translateY(0);
 }
 .menu__content--title {
   width: 100%;
@@ -1138,6 +1189,28 @@ a:link {
   .menu__content--prix {
     font-size: 30px;
   }
+}
+
+.checkbox {
+  font-size: 80px;
+  background-color: #99E2D0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  transform: scale(0.1);
+  transform: rotate(-90deg);
+  transition: transform 330ms ease-in-out;
+}
+
+span {
+  transform: translateY(250%);
+  transition: transform 280ms ease-out 50ms;
+  display: block;
 }
 
 .btn {

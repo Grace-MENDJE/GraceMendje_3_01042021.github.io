@@ -1,6 +1,7 @@
 .pagedaccueil{
     @include flex-column;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .locatisation{
@@ -59,7 +60,7 @@
     }
     
     &__texte{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: $roboto;
         width: 50%;
         margin-left: 5%;
@@ -232,7 +233,7 @@
 
         } 
         &--texte{
-            font-size: 18px;
+            font-size: 17px;
             font-family: $roboto;
             @media #{$mobile} {
                 font-size: 20px;                
@@ -370,7 +371,7 @@ a:link{
             margin-top: -1%;
             margin-bottom: 5%;
             border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-bottom-right-radius: 15px;            
         }
     }
 }
@@ -392,17 +393,41 @@ a:link{
         }
         @media #{$interdesktop},#{$lgdesktop}{
             font-size: 23px;
-        }
+        }       
+        
     }
 
     &--icons{
         font-size: 25px;
         margin-top: 6%;
-        &:hover{
+        position: relative;
+        z-index: 1;
+        &:hover { 
+            color: $voiletrosatre;
+            .motema{
+                opacity: 1;
+            }
+        }
+            .motema{
+                font-family: 'font Awesome 5 free';
+                content: '\f004';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                color: $voiletrosatre;
+                opacity: 0;
+                z-index: -1;
+                            
+            }
+        
+        
+       /* &:hover{
             color: $primaire;
             font-family: 'font Awesome 5 free';
-            content: '\f004';
-        }
+            content: '';
+        }*/
         @media #{$mobile} {
             margin-top: 7%;
         }
@@ -430,6 +455,10 @@ a:link{
 
 .restaurant__card--content{
     color: $couleurNoire;
+}
+
+.motema{
+    color: $voiletrosatre;
 }
 
 
