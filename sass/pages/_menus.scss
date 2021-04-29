@@ -109,7 +109,6 @@
     background-color: $couleurBlanche; 
     opacity: 0;
     animation: menu-loading $anim-dur ease-in-out both random(100)*15ms;
-
     @for $i from 1 through 4 {
         &--#{$i} {
             animation-delay: $anim-dur * $i;
@@ -119,7 +118,8 @@
     &:hover{
         .checkbox{
             width: 25%;
-            transform: rotate(0deg);           
+            transform: translate(0%);
+            transition: all 300ms ease-in-out;                    
         }  
         .content{
             width: 60%;            
@@ -127,7 +127,12 @@
                 text-overflow: ellipsis;
             }
             
-        }      
+        } 
+        span{
+            opacity: 1;
+            transform: rotate(0deg);
+            transition: transform 330ms 200ms ease-in-out ;
+        }     
     }
                
     /*&:hover > .checkbox {
@@ -279,12 +284,13 @@
     height: 5.3rem;
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px;
-    overflow: hidden;    
-    animation: checkbox 200ms ease-in-out;
+    transform: translate(25%);
     span{
-        transform: rotate(-90deg);
-        transition: transform 330ms ease-in-out;
+        transform: rotate(-90deg); 
+        opacity: 0;
+        
     }
+    
     @media #{$desktop}{
         font-size: 40px;
     }

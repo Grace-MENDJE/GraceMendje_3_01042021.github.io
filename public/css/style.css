@@ -18,34 +18,6 @@
     opacity: 1;
   }
 }
-@keyframes checkbox {
-  0% {
-    transform: scale(0);
-    background-color: 0%;
-  }
-  50% {
-    transform: scale(50);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
-    background-color: 50%;
-  }
-  100% {
-    transform: scale(1);
-    background-color: 100%;
-  }
-}
-@keyframes checkbox {
-  0% {
-    transform: scale(0);
-    background-color: 0%;
-  }
-  50% {
-    background-color: 50%;
-  }
-  100% {
-    transform: scale(100);
-    background-color: 100%;
-  }
-}
 .entete {
   display: flex;
   width: 100%;
@@ -1077,7 +1049,7 @@ a:link {
   border-radius: 20px;
   background-color: white;
   opacity: 0;
-  animation: menu-loading 1000ms ease-in-out both 825ms;
+  animation: menu-loading 1000ms ease-in-out both 1245ms;
   /*&:hover > .checkbox {
       transform: scale(0);
       transform: rotate(0deg);
@@ -1100,13 +1072,19 @@ a:link {
 }
 .menugroupe:hover .checkbox {
   width: 25%;
-  transform: rotate(0deg);
+  transform: translate(0%);
+  transition: all 300ms ease-in-out;
 }
 .menugroupe:hover .content {
   width: 60%;
 }
 .menugroupe:hover .content .menu__content--texte {
   text-overflow: ellipsis;
+}
+.menugroupe:hover span {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: transform 330ms 200ms ease-in-out;
 }
 
 .menu__price {
@@ -1288,12 +1266,11 @@ a:link {
   height: 5.3rem;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  overflow: hidden;
-  animation: checkbox 200ms ease-in-out;
+  transform: translate(25%);
 }
 .checkbox span {
   transform: rotate(-90deg);
-  transition: transform 330ms ease-in-out;
+  opacity: 0;
 }
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .checkbox {
