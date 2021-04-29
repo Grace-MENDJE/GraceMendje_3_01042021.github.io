@@ -4,6 +4,7 @@ $tertiaire:#99E2D0;
 $beige:rgb(230, 160, 85);
 $grise:#f7f7f7;
 $voiletrosatre:rgb(199, 60, 214);
+$violet:rgb(127, 34, 189);
 $couleurNoire:black;
 $couleurBlanche:white;
 $roboto:'Roboto', sans-serif;
@@ -17,3 +18,7 @@ $tablette:"only screen and (min-width:600px) and (max-width:900px)";
 $desktop:"only screen and (min-width:901px) and (max-width:1099px)";
 $interdesktop:"only screen and (min-width:1100px) and (max-width:1400px)";
 $lgdesktop:"only screen and (min-width:1401px)";
+
+//durée des animations
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;

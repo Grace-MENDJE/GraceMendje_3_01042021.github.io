@@ -91,7 +91,7 @@
     margin-top: -15%;
     &__titre{
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
         padding-top: 8%;
         width: 80%;
         margin-left: 10%;
@@ -116,7 +116,7 @@
 
     &__texte{
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         width: 90%;
         margin-left: 5%;
         margin-top: 10%;
@@ -127,7 +127,7 @@
             font-size: 33px;
         }
         @media #{$desktop}{
-            font-size: 50px;
+            font-size: 40px;
         }
         @media #{$interdesktop}{
             font-size: 50px;
@@ -148,7 +148,7 @@
 .fonctionnement{
     margin-left: 5%;
     @media #{$tablette}{
-        width: 70%;
+        width: 90%;
     }
     @media #{$desktop} {
         width: 80%;
@@ -189,19 +189,24 @@
             padding: 4px 9px;
             margin-left: -5%;
             margin-top: 6%;
+            @media #{$tablette}{
+                padding: 10px 14px;
+                margin-left: -7%;
+                margin-top: 5%;
+            }
             @media #{$desktop}{
                 border-radius: 50px;
-                padding: 7px 11px;
-                margin-left: -18%;
+                padding: 10px 14px;
+                margin-left: -19%;
             }
             @media #{$interdesktop} {
-                padding: 9px 13px;
-                margin-left: -3%;
+                padding: 12px 17px;
+                margin-left: -5%;
             }
             @media #{$lgdesktop}{
-                padding: 11px 15px;
-                margin-left: -3%;
-                margin-top: 4%;
+                padding: 14px 18px;
+                margin-left: -5%;
+                margin-top: 5%;
             }
         } 
         &--fas{
@@ -220,7 +225,7 @@
             }
             @media #{$desktop}{
                 font-size: 2rem;
-                margin-top: 5%;
+                margin-top: 7%;
             }
             @media #{$interdesktop}{
                 font-size: 30px;
@@ -322,7 +327,7 @@ a:link{
             }
             @media #{$tablette}{
                 font-size: 17px;
-                margin-left: -25%;
+                margin-left: -30%;
             }
             @media #{$desktop}{
                 font-size: 20px;
@@ -336,7 +341,7 @@ a:link{
             }
             @media #{$lgdesktop} {
                 font-size: 25px;
-                margin-left: -29%;
+                margin-left: -31%;
                 margin-top: 3%;
             }
             
@@ -396,19 +401,20 @@ a:link{
         }       
         
     }
-
-    &--icons{
-        font-size: 25px;
-        margin-top: 6%;
-        position: relative;
-        z-index: 1;
-        &:hover { 
-            color: $voiletrosatre;
+    /*--icons{
+        
+        &:hover {
+            transform: scale(0);
             .motema{
-                opacity: 1;
-            }
-        }
+                transform: scale(1);
+                
+            }        
+                         
+        }        
+                
+        
             .motema{
+                display: none;
                 font-family: 'font Awesome 5 free';
                 content: '\f004';
                 position: absolute;
@@ -416,11 +422,13 @@ a:link{
                 right: 0;
                 bottom: 0;
                 left: 0;
+                color: transparent;
                 color: $voiletrosatre;
-                opacity: 0;
                 z-index: -1;
-                            
-            }
+                transform: scale(0);                 
+                animation: heart 1000ms both;            
+                                       
+            }*/
         
         
        /* &:hover{
@@ -428,23 +436,23 @@ a:link{
             font-family: 'font Awesome 5 free';
             content: '';
         }*/
-        @media #{$mobile} {
+        /*@media #{$mobile} {
             margin-top: 7%;
         }
         @media #{$tablette}{
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         @media #{$desktop} {
             font-size: 2rem;
         }
         @media #{$interdesktop},#{$lgdesktop}{
-            font-size: 30px;
+            font-size: 2.5rem;
         }
-    }
+    }*/
 
 }
 
-.card-content--textes>h3{
+/*.card-content--textes>h3{
     margin-bottom: -5%;
     font-family: $roboto;
 }
@@ -459,6 +467,31 @@ a:link{
 
 .motema{
     color: $voiletrosatre;
+}*/
+
+.card-content--icons{
+    font-size: 25px;
+    margin-top: 6%;
+    &:hover{
+        > .card-content--icons--bg{
+            transform: scale(1);
+            color: $voiletrosatre;
+            transition: transform 1000ms ;
+        }
+        > .card-content--icons--nobg{
+            color: transparent;
+            transition:650ms;
+        }
+    }
+    position: relative;
+    &--nobg{        
+        color: $couleurNoire;
+        position: absolute;         
+    }
+    &--bg{
+        transform: scale(0);
+        color:transparent; 
+    }
+    
+        
 }
-
-
