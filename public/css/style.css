@@ -1,4 +1,15 @@
 /*Responsive*/
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75%, 100% {
+    opacity: 1;
+  }
+}
 @keyframes heart {
   0% {
     transform: scale(0);
@@ -15,6 +26,17 @@
     opacity: 0.5;
   }
   75%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes accueil {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -239,6 +261,10 @@ a:link {
   flex-direction: column;
   width: 90%;
   margin-left: 5%;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  animation: accueil 500ms 2000ms both ease-in-out;
 }
 
 .locatisation {
@@ -903,6 +929,80 @@ a:link {
   color: transparent;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.loader__boule {
+  animation: loader 500ms ease-in-out infinite 270ms;
+}
+
+.loader__boule--1 {
+  width: 50px;
+  height: 50px;
+  background-color: #ff00b3;
+  border-radius: 50px;
+  margin-right: 2%;
+  opacity: 0;
+  animation-delay: 500ms;
+}
+
+.loader__boule--2 {
+  width: 50px;
+  height: 50px;
+  background-color: #0084ff;
+  border-radius: 50px;
+  margin-right: 2%;
+  opacity: 0;
+  animation-delay: 600ms;
+}
+
+.loader__boule--3 {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6600;
+  border-radius: 50px;
+  margin-right: 2%;
+  opacity: 0;
+  animation-delay: 700ms;
+}
+
+.loader__boule--3 {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6600;
+  border-radius: 50px;
+  margin-right: 2%;
+  opacity: 0;
+  animation-delay: 800ms;
+}
+
+.loader__boule--4 {
+  width: 50px;
+  height: 50px;
+  background-color: #00ffb3;
+  border-radius: 50px;
+  margin-right: 2%;
+  opacity: 0;
+  animation-delay: 900ms;
+}
+
+.loader__boule--5 {
+  width: 50px;
+  height: 50px;
+  background-color: #ff0015;
+  border-radius: 50px;
+  margin-right: 2%;
+  opacity: 0;
+  animation-delay: 1000ms;
+}
+
 .menu {
   width: 90%;
   margin-left: 5%;
@@ -1049,14 +1149,7 @@ a:link {
   border-radius: 20px;
   background-color: white;
   opacity: 0;
-  animation: menu-loading 1000ms ease-in-out both 1245ms;
-  /*&:hover > .checkbox {
-      transform: scale(0);
-      transform: rotate(0deg);
-      span {
-          transform: scale(1);
-      }
-  }*/
+  animation: menu-loading 1000ms both ease-in-out 615ms;
 }
 .menugroupe--1 {
   animation-delay: 1000ms;
@@ -1070,16 +1163,14 @@ a:link {
 .menugroupe--4 {
   animation-delay: 4000ms;
 }
-.menugroupe:hover .checkbox {
+.menugroupe:hover {
+  /*.menu__content--title{            
+      text-overflow: ellipsis;
+  } */
+}
+.menugroupe:hover > .checkbox {
   width: 25%;
-  transform: translate(0%);
-  transition: all 300ms ease-in-out;
-}
-.menugroupe:hover .content {
-  width: 60%;
-}
-.menugroupe:hover .content .menu__content--texte {
-  text-overflow: ellipsis;
+  transform: translateX(25px);
 }
 .menugroupe:hover span {
   opacity: 1;
@@ -1092,6 +1183,9 @@ a:link {
 }
 .menu__title {
   margin-left: 3%;
+  /*white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;*/
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
   .menu__title {
@@ -1205,7 +1299,7 @@ a:link {
 .menu__content--texte {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  text-overflow: clip;
+  text-overflow: ellipsis;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .menu__content--texte {
@@ -1266,7 +1360,8 @@ a:link {
   height: 5.3rem;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  transform: translate(25%);
+  transform: translateX(0px);
+  transition: all 300ms ease-in-out;
 }
 .checkbox span {
   transform: rotate(-90deg);

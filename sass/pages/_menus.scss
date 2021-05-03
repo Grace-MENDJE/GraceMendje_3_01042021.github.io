@@ -108,40 +108,27 @@
     border-radius: 20px; 
     background-color: $couleurBlanche; 
     opacity: 0;
-    animation: menu-loading $anim-dur ease-in-out both random(100)*15ms;
+    animation: menu-loading $anim-dur both ease-in-out random(100)*15ms;
     @for $i from 1 through 4 {
         &--#{$i} {
             animation-delay: $anim-dur * $i;
         }
-    }     
-         
-    &:hover{
-        .checkbox{
+    }    
+    &:hover{        
+        > .checkbox{
             width: 25%;
-            transform: translate(0%);
-            transition: all 300ms ease-in-out;                    
-        }  
-        .content{
-            width: 60%;            
-            .menu__content--texte{
-                text-overflow: ellipsis;
-            }
-            
-        } 
+            transform: translateX(25px);
+                                
+        }         
         span{
             opacity: 1;
             transform: rotate(0deg);
             transition: transform 330ms 200ms ease-in-out ;
-        }     
-    }
-               
-    /*&:hover > .checkbox {
-        transform: scale(0);
-        transform: rotate(0deg);
-        span {
-            transform: scale(1);
         }
-    }*/ 
+        /*.menu__content--title{            
+            text-overflow: ellipsis;
+        } */ 
+    }
 }
 
 .menu{
@@ -152,6 +139,9 @@
    
     &__title{
         margin-left: 3%;
+        /*white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;*/
         @media #{$tablette}{
             font-size: 15px;
         } 
@@ -189,11 +179,7 @@
         background-color: $couleurBlanche;
         width: 85%;
         margin-left: 3%;
-        border-radius: 20px;  
-         
-        
-        //animation-fill-mode: forwards;       
-          
+        border-radius: 20px;   
         &--title{
             font-size: 14px;
             font-weight: bolder;
@@ -235,7 +221,7 @@
         &--texte{
             font-family: $roboto;
             font-size: 14px;
-            text-overflow: clip;
+            text-overflow: ellipsis;
             @media #{$mobile}{
                 font-size: 15px;
             }
@@ -284,7 +270,8 @@
     height: 5.3rem;
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px;
-    transform: translate(25%);
+    transform: translateX(0px);     
+    transition: all 300ms ease-in-out; 
     span{
         transform: rotate(-90deg); 
         opacity: 0;
@@ -310,3 +297,6 @@
     width: 60%;
     margin-left: 20%;
 }
+
+
+            

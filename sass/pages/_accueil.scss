@@ -2,6 +2,10 @@
     @include flex-column;
     width: 90%;
     margin-left: 5%;
+    position: absolute;
+    background-color: $couleurBlanche;
+    z-index: 1;
+    animation: accueil 500ms 2000ms both  ease-in-out; 
 }
 
 .locatisation{
@@ -494,4 +498,79 @@ a:link{
     }
     
         
+}
+
+
+//Partie loder page d'accueil
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    //background-color: lighten($couleurNoire, 10%) ;  
+}
+
+.loader__boule{
+    animation: loader $anim-dur/2 ease-in-out infinite random(100)*15ms;    
+}
+.loader__boule--1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 179);
+    border-radius: 50px;
+    margin-right: 2%;
+    opacity: 0;
+    animation-delay: 500ms;
+}
+.loader__boule--2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 132, 255);
+    border-radius: 50px;
+    margin-right: 2%;
+    opacity: 0;
+    animation-delay: 600ms;
+}
+
+.loader__boule--3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 102, 0);
+    border-radius: 50px;
+    margin-right: 2%;
+    opacity: 0; 
+    animation-delay: 700ms;
+}
+
+.loader__boule--3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 102, 0);
+    border-radius: 50px;
+    margin-right: 2%;
+    opacity: 0;
+    animation-delay: 800ms;
+}
+
+.loader__boule--4{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 179);
+    border-radius: 50px;
+    margin-right: 2%; 
+    opacity: 0;
+    animation-delay: 900ms;
+}
+
+.loader__boule--5{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 21);
+    border-radius: 50px;
+    margin-right: 2%;
+    opacity: 0; 
+    animation-delay: 1000ms;
 }
