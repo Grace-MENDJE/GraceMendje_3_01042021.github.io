@@ -55,6 +55,12 @@
         @media #{$desktop}{
             padding-left: 12%;
         }
+        @media #{$interdesktop}, #{$lgdesktop}{
+            display: flex;
+            width: 70%;
+            margin: 2%;
+            margin-bottom: 5%;
+        }
 }
 
 @mixin fonctionnementIcon {

@@ -399,16 +399,19 @@ a:link {
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .exploration__titre {
     font-size: 50px;
+    text-align: center;
   }
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .exploration__titre {
     font-size: 50px;
+    text-align: center;
   }
 }
 @media only screen and (min-width:1401px) {
   .exploration__titre {
     font-size: 50px;
+    text-align: center;
   }
 }
 .exploration__texte {
@@ -504,17 +507,23 @@ a:link {
 }
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .fonctionnement {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
   }
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .fonctionnement {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
   }
 }
 @media only screen and (min-width:1401px) {
   .fonctionnement {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
   }
 }
 .fonctionnement__titre {
@@ -535,6 +544,7 @@ a:link {
 @media only screen and (min-width:901px) and (max-width:1099px), only screen and (min-width:1100px) and (max-width:1400px), only screen and (min-width:1401px) {
   .fonctionnement__titre {
     font-size: 40px;
+    text-align: center;
   }
 }
 .fonctionnement__btn {
@@ -550,6 +560,14 @@ a:link {
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .fonctionnement__btn {
     padding-left: 12%;
+  }
+}
+@media only screen and (min-width:1100px) and (max-width:1400px), only screen and (min-width:1401px) {
+  .fonctionnement__btn {
+    display: flex;
+    width: 70%;
+    margin: 2%;
+    margin-bottom: 5%;
   }
 }
 .fonctionnement__btn:hover {
@@ -581,15 +599,16 @@ a:link {
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .fonctionnement__btn--nombre {
-    padding: 12px 17px;
-    margin-left: -5%;
+    padding: 16px 15px;
+    margin-left: -10%;
+    margin-top: 7%;
   }
 }
 @media only screen and (min-width:1401px) {
   .fonctionnement__btn--nombre {
-    padding: 14px 18px;
-    margin-left: -5%;
-    margin-top: 5%;
+    padding: 18px 19px;
+    margin-left: -7%;
+    margin-top: 7%;
   }
 }
 .fonctionnement__btn--fas {
@@ -625,14 +644,14 @@ a:link {
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .fonctionnement__btn--fas {
-    font-size: 30px;
-    margin-top: 6%;
+    font-size: 25px;
+    margin-top: 9%;
   }
 }
 @media only screen and (min-width:1401px) {
   .fonctionnement__btn--fas {
-    font-size: 40px;
-    margin-top: 4%;
+    font-size: 30px;
+    margin-top: 9%;
   }
 }
 .fonctionnement__btn--texte {
@@ -641,7 +660,7 @@ a:link {
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .fonctionnement__btn--texte {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
@@ -657,12 +676,21 @@ a:link {
 }
 @media only screen and (min-width:1100px) and (max-width:1400px) {
   .fonctionnement__btn--texte {
-    font-size: 30px;
+    font-size: 17px;
+    margin-top: 10%;
   }
 }
 @media only screen and (min-width:1401px) {
   .fonctionnement__btn--texte {
-    font-size: 30px;
+    font-size: 22px;
+    margin-top: 9%;
+  }
+}
+
+@media only screen and (min-width:1100px) and (max-width:1400px), only screen and (min-width:1401px) {
+  .allbtn {
+    display: flex;
+    margin-bottom: 3%;
   }
 }
 
@@ -673,7 +701,7 @@ a:link {
 
 .restaurant__title {
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 7%;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
@@ -695,7 +723,7 @@ a:link {
 .restaurant {
   width: 100%;
   background-color: #f7f7f7;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
 }
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .restaurant__cards {
@@ -940,7 +968,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 270ms;
+  animation: loader 500ms ease-in-out infinite 1155ms;
 }
 
 .loader__boule--1 {
@@ -1147,9 +1175,8 @@ a:link {
   display: flex;
   margin-bottom: 4%;
   border-radius: 20px;
-  background-color: white;
   opacity: 0;
-  animation: menu-loading 1000ms both ease-in-out 615ms;
+  animation: menu-loading 1000ms both ease-in-out 1470ms;
 }
 .menugroupe--1 {
   animation-delay: 1000ms;
