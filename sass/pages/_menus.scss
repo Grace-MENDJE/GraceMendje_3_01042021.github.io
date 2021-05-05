@@ -104,9 +104,11 @@
 
 .menugroupe{
     display: flex;
+    width: 90%;
+    height: 84.8px;
     margin-bottom: 4%;
     border-radius: 20px; 
-    //background-color: $couleurBlanche; 
+    background-color: $couleurBlanche; 
     opacity: 0;
     animation: menu-loading $anim-dur both ease-in-out random(100)*15ms;
     @for $i from 1 through 4 {
@@ -116,8 +118,19 @@
     }    
     &:hover{        
         > .checkbox{
-            width: 25%;
+            padding-left: 20%;
+            width: 20%;
             transform: translateX(25px);
+            @media #{$desktop}{
+                padding-left: 10%;
+            }
+
+            @media #{$interdesktop}{
+                padding-left: 10%;                
+            }
+            @media #{$lgdesktop}{
+                padding-left: 5%;
+            }
                                 
         }         
         span{
@@ -125,15 +138,45 @@
             transform: rotate(0deg);
             transition: transform 330ms 200ms ease-in-out ;
         }
+
+        .menu__price {
+            width: 5%;
+        }
+
+        /*.menu__content--texte {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }*/
         /*.menu__content--title{            
             text-overflow: ellipsis;
         } */ 
+    }
+    @media #{$mobile}{
+        height: 87.8px;
+    }
+
+    @media #{$tablette}{
+        height: 86px; 
+    }
+
+    @media #{$desktop}{
+        height: 84px;
+    }
+
+    @media #{$interdesktop}{
+        height: 143px;
+    }
+
+    @media #{$lgdesktop}{
+        height: 86%;
     }
 }
 
 .menu{
 
     &__price{
+        display: flex;
+        z-index: 1;
         width: 15%;
     }
    
@@ -143,7 +186,7 @@
         overflow: hidden;
         text-overflow: ellipsis;*/
         @media #{$tablette}{
-            font-size: 15px;
+            font-size: 13px;
         } 
         @media #{$desktop}{
             font-size: 23px;
@@ -181,17 +224,22 @@
         margin-left: 3%;
         border-radius: 20px;   
         &--title{
-            font-size: 14px;
+            font-size: 15px;
             font-weight: bolder;
             @media #{$mobile}{
                 font-size: 18px;
                 padding-top: 3%;
             }
             @media #{$tablette}{
-                font-size: 23px;
-                padding-top: 2%;
+                font-size: 20px;
+                padding-top: 0%;
             }
-            @media #{$desktop},#{$interdesktop} {
+            @media #{$desktop}{
+                font-size: 23px;
+                padding-top: 0%;
+            }
+
+            @media #{$interdesktop} {
                 font-size: 27px;
                 padding-top: 2%;
             }
@@ -220,15 +268,18 @@
         }
         &--texte{
             font-family: $roboto;
-            font-size: 14px;
-            text-overflow: ellipsis;
+            font-size: 13px;
             @media #{$mobile}{
                 font-size: 15px;
             }
             @media #{$tablette}{
-                font-size: 20px;
+                font-size: 18px;
             }
-            @media #{$desktop},#{$interdesktop}{
+            @media #{$desktop}{
+                font-size: 21px;
+            }
+
+            @media #{$interdesktop}{
                 font-size: 25px;
             }
 
@@ -240,16 +291,20 @@
         &--prix{
             margin-right: 2%;
             font-weight: bold;
-            margin-top: 45px;
-            font-size: 15px;
+            margin-top: 48px;
+            font-size: 13px;
             @media #{$mobile}{
-                font-size: 15px;
+                font-size: 14px;
+                margin-top: 57px;
             }
             @media #{$tablette}{
                 font-size: 20px;
-                padding-top: 15px;
+                padding-top: 3px;
             }
-            @media #{$desktop},#{$interdesktop} {
+            @media #{$desktop}{
+                font-size: 20px;
+            }
+            @media #{$interdesktop} {
                 font-size: 25px;
             } 
             @media #{$lgdesktop}{
@@ -260,7 +315,7 @@
 }
 
 .checkbox{
-    font-size: 30px;
+    font-size: 25px;
     background-color: $tertiaire;
     color: white;
     display: flex;
@@ -273,8 +328,11 @@
     transform: translateX(0px);     
     transition: all 300ms ease-in-out; 
     span{
-        transform: rotate(-90deg); 
-        opacity: 0;        
+        transform: rotate(-180deg);
+        margin-left: -70px;       
+    }
+    @media #{$tablette}{
+        font-size: 40px;
     }
     
     @media #{$desktop}{
@@ -296,6 +354,3 @@
     width: 60%;
     margin-left: 20%;
 }
-
-
-            
