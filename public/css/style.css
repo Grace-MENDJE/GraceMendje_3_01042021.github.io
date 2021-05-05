@@ -607,7 +607,7 @@ a:link {
 @media only screen and (min-width:1401px) {
   .fonctionnement__btn--nombre {
     padding: 18px 19px;
-    margin-left: -7%;
+    margin-left: -5%;
     margin-top: 7%;
   }
 }
@@ -968,7 +968,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 1500ms;
+  animation: loader 500ms ease-in-out infinite 570ms;
 }
 
 .loader__boule--1 {
@@ -1179,7 +1179,7 @@ a:link {
   border-radius: 20px;
   background-color: white;
   opacity: 0;
-  animation: menu-loading 1000ms both ease-in-out 1080ms;
+  animation: menu-loading 1000ms both ease-in-out 1395ms;
 }
 .menugroupe--1 {
   animation-delay: 1000ms;
