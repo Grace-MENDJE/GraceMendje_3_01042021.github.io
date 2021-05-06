@@ -463,6 +463,9 @@ a:link {
   border: none;
   color: white;
 }
+.exploration__btn:hover {
+  background-image: linear-gradient(to bottom, #ff79da 60%, #af62e3);
+}
 @media only screen and (min-width:376px) and (max-width:599px) {
   .exploration__btn {
     font-size: 18px;
@@ -968,7 +971,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 1335ms;
+  animation: loader 500ms ease-in-out infinite 1275ms;
 }
 
 .loader__boule--1 {
@@ -1179,7 +1182,7 @@ a:link {
   border-radius: 20px;
   background-color: white;
   opacity: 0;
-  animation: menu-loading 1000ms both ease-in-out 510ms;
+  animation: menu-loading 1000ms both ease-in-out 120ms;
 }
 .menugroupe--1 {
   animation-delay: 1000ms;
@@ -1502,6 +1505,9 @@ a:link {
   color: white;
   width: 60%;
   margin-left: 20%;
+}
+.btn:hover {
+  background-image: linear-gradient(to bottom, #ff79da 60%, #af62e3);
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .btn {

@@ -19,6 +19,9 @@
     border-radius: 55px;
     border: none;
     color: white;
+    &:hover{
+        background-image: linear-gradient(to bottom, $secondaire 60%, lighten($violet, 20%)); 
+    }
     @media #{$mobile} {
         font-size: 18px;        
     }  
