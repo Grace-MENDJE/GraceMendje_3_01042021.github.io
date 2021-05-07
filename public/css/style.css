@@ -488,6 +488,8 @@ a:link {
     margin-left: 25%;
     font-size: 35px;
     padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 9%;
   }
 }
 @media only screen and (min-width:1401px) {
@@ -496,6 +498,8 @@ a:link {
     margin-left: 25%;
     font-size: 35px;
     padding: 2.5%;
+    margin-top: 3%;
+    margin-bottom: 8%;
   }
 }
 
@@ -970,7 +974,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 1485ms;
+  animation: loader 500ms ease-in-out infinite 675ms;
 }
 
 .loader__boule--1 {
@@ -1404,6 +1408,8 @@ a:link {
     margin-left: 25%;
     font-size: 35px;
     padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 9%;
   }
 }
 @media only screen and (min-width:1401px) {
@@ -1412,6 +1418,8 @@ a:link {
     margin-left: 25%;
     font-size: 35px;
     padding: 2.5%;
+    margin-top: 3%;
+    margin-bottom: 8%;
   }
 }
 
@@ -1423,7 +1431,7 @@ a:link {
   height: 75px;
   margin-left: 10px;
   margin-bottom: 5%;
-  animation: menu-loading 1000ms both ease-in-out 1215ms;
+  animation: menu-loading 1000ms both ease-in-out 105ms;
 }
 .groupemenu--1 {
   animation-delay: 1000ms;
@@ -1436,6 +1444,35 @@ a:link {
 }
 .groupemenu--4 {
   animation-delay: 4000ms;
+}
+@media only screen and (min-width:600px) and (max-width:900px) {
+  .groupemenu {
+    width: calc(100% - 50px);
+    height: 85px;
+    margin-left: 25px;
+  }
+}
+@media only screen and (min-width:901px) and (max-width:1099px) {
+  .groupemenu {
+    width: calc(100% - 90px);
+    margin-left: 40px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width:1100px) and (max-width:1400px) {
+  .groupemenu {
+    width: calc(100% - 80px);
+    height: 100px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width:1401px) {
+  .groupemenu {
+    width: calc(100% - 200px);
+    height: 120px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
 }
 .groupemenu:hover {
   background-color: transparent;
@@ -1467,6 +1504,16 @@ a:link {
   background-color: white;
   transition: 200ms;
 }
+@media only screen and (min-width:1100px) and (max-width:1400px) {
+  .groupemenu__textes {
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width:1401px) {
+  .groupemenu__textes {
+    padding-top: 25px;
+  }
+}
 .groupemenu__prix {
   display: flex;
   align-items: last baseline;
@@ -1493,7 +1540,7 @@ a:link {
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
   .groupemenu__prix {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 22px;
   }
 }
