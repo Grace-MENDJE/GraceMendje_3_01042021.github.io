@@ -971,7 +971,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 1275ms;
+  animation: loader 500ms ease-in-out infinite 1110ms;
 }
 
 .loader__boule--1 {
@@ -1182,7 +1182,7 @@ a:link {
   border-radius: 20px;
   background-color: white;
   opacity: 0;
-  animation: menu-loading 1000ms both ease-in-out 120ms;
+  animation: menu-loading 1000ms both ease-in-out 720ms;
 }
 .menugroupe--1 {
   animation-delay: 1000ms;
