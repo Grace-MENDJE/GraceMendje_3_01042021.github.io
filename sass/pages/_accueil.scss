@@ -5,7 +5,7 @@
     position: absolute;
     background-color: $couleurBlanche;
     z-index: 1;
-    animation: accueil 500ms 2000ms both  ease-in-out; 
+    animation: accueil 500ms 2000ms both  ease-in-out;    
 }
 
 .locatisation{
@@ -35,7 +35,7 @@
         }
         @media #{$lgdesktop}{
             padding-top: 3%;
-            margin-left: 30%;
+            margin-left: 28%;
         }
         &--fas{
             font-size: 1.5rem;
@@ -153,7 +153,6 @@
 }
 
 .fonctionnement{
-    margin-left: 5%;
     @media #{$tablette}{
         width: 90%;
     }
@@ -177,6 +176,7 @@
         font-size: 25px;
         font-family: $roboto;
         font-weight: bold;
+        padding-left: 5%;
         @media #{$mobile}{
             font-size: 25px;
         }
@@ -324,7 +324,7 @@ a:link{
     }
     &__card{
         width: 90%;
-        margin-left: 5%;
+        padding-left: 5%;
         margin-top: 10%;
         &--image{
             display: flex;

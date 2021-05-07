@@ -53,10 +53,10 @@
 
 @mixin btnfonctionnement {
     display: flex;
-        width: 90%;
+        width: 85%;
         border-radius: 20px;
         background-color: $grise;
-        margin-left: 5%;
+        margin-left: 10%;
         border: none;
         margin-bottom: 10%;
         @media #{$desktop}{

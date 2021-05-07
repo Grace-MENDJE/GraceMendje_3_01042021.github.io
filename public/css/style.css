@@ -183,7 +183,7 @@ footer {
 }
 .footer__content {
   display: flex;
-  margin-left: 5%;
+  padding-left: 5%;
 }
 .footer__content--textes {
   color: white;
@@ -304,7 +304,7 @@ a:link {
 @media only screen and (min-width:1401px) {
   .locatisation__icon {
     padding-top: 3%;
-    margin-left: 30%;
+    margin-left: 28%;
   }
 }
 .locatisation__icon--fas {
@@ -503,9 +503,6 @@ a:link {
   }
 }
 
-.fonctionnement {
-  margin-left: 5%;
-}
 @media only screen and (min-width:600px) and (max-width:900px) {
   .fonctionnement {
     width: 90%;
@@ -536,6 +533,7 @@ a:link {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  padding-left: 5%;
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .fonctionnement__titre {
@@ -555,10 +553,10 @@ a:link {
 }
 .fonctionnement__btn {
   display: flex;
-  width: 90%;
+  width: 85%;
   border-radius: 20px;
   background-color: #f7f7f7;
-  margin-left: 5%;
+  margin-left: 10%;
   border: none;
   margin-bottom: 10%;
   display: flex;
@@ -751,7 +749,7 @@ a:link {
 }
 .restaurant__card {
   width: 90%;
-  margin-left: 5%;
+  padding-left: 5%;
   margin-top: 10%;
 }
 .restaurant__card--image {
@@ -974,7 +972,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 675ms;
+  animation: loader 500ms ease-in-out infinite 750ms;
 }
 
 .loader__boule--1 {
@@ -1431,7 +1429,7 @@ a:link {
   height: 75px;
   margin-left: 10px;
   margin-bottom: 5%;
-  animation: menu-loading 1000ms both ease-in-out 105ms;
+  animation: menu-loading 1000ms both ease-in-out 180ms;
 }
 .groupemenu--1 {
   animation-delay: 1000ms;
