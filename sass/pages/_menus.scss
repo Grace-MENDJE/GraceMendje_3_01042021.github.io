@@ -1,6 +1,5 @@
-.menu{
-    width: 90%;
-    margin-left: 5%;
+.mainmenu{
+    margin: 0%;
 }
 
 .cardalafrancaise{
@@ -102,78 +101,8 @@
     }
 }
 
-.menugroupe{
-    display: flex;
-    width: 90%;
-    height: 84.8px;
-    margin-bottom: 4%;
-    border-radius: 20px; 
-    background-color: $couleurBlanche; 
-    opacity: 0;
-    animation: menu-loading $anim-dur both ease-in-out random(100)*15ms;
-    @for $i from 1 through 4 {
-        &--#{$i} {
-            animation-delay: $anim-dur * $i;
-        }
-    }    
-    &:hover{        
-        > .checkbox{
-            padding-left: 20%;
-            width: 20%;
-            transform: translateX(25px);
-            @media #{$desktop}{
-                padding-left: 10%;
-            }
-
-            @media #{$interdesktop}{
-                padding-left: 10%;                
-            }
-            @media #{$lgdesktop}{
-                padding-left: 5%;
-            }
-                                
-        }         
-        span{
-            opacity: 1;
-            transform: rotate(0deg);
-            transition: transform 330ms 200ms ease-in-out ;
-        }
-
-        .menu__price {
-            width: 5%;
-        }
-
-        /*.menu__content--texte {
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }*/
-        /*.menu__content--title{            
-            text-overflow: ellipsis;
-        } */ 
-    }
-    @media #{$mobile}{
-        height: 87.8px;
-    }
-
-    @media #{$tablette}{
-        height: 86px; 
-    }
-
-    @media #{$desktop}{
-        height: 84px;
-    }
-
-    @media #{$interdesktop}{
-        height: 143px;
-    }
-
-    @media #{$lgdesktop}{
-        height: 86%;
-    }
-}
-
-.menu{
-
+.menu{ 
+    //margin-bottom: 10%;
     &__price{
         display: flex;
         z-index: 1;
@@ -314,43 +243,148 @@
     }
 }
 
-.checkbox{
-    font-size: 25px;
-    background-color: $tertiaire;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0%;
-    height: 5.3rem;
-    border-bottom-right-radius: 20px; 
-    border-top-right-radius: 20px;
-    transform: translateX(0px);     
-    transition: all 300ms ease-in-out; 
-    span{
-        transform: rotate(-180deg);
-        margin-left: -70px;       
-    }
-    @media #{$tablette}{
-        font-size: 40px;
-    }
-    
-    @media #{$desktop}{
-        font-size: 40px;
-    }
-    @media #{$interdesktop}{
-        font-size: 50px;
-        height: 9rem;
-    }
-    @media #{$lgdesktop}{
-        font-size: 65px;
-        height: 9rem;
-    }
-}
-
-
 .btn{
     @include btnExploration ;
     width: 60%;
     margin-left: 20%;
+}
+
+.groupemenu{
+    display: flex;
+    border-radius: 20px;
+    background-color: $couleurBlanche;
+    width: calc(100% - 30px);
+    height: 75px;
+    margin-left: 10px;
+    margin-bottom: 5%;
+    animation: menu-loading $anim-dur both ease-in-out random(100)*15ms;
+    @for $i from 1 through 4 {
+        &--#{$i} {
+            animation-delay: $anim-dur * $i;
+        }
+    } 
+    &:hover{
+        background-color: transparent;
+        >.groupemenu__checkbox {
+            width: 30%;
+            @media #{$tablette}{
+                width: 30%;
+            }
+            @media #{$desktop}, #{$interdesktop}, #{$lgdesktop}{
+                width: 30%;
+            } 
+        }
+        >.groupemenu__textes {
+            width: calc(100% - 100px);    
+        }
+        >.groupemenu__prix{
+            border-bottom-right-radius: 0px; 
+            border-top-right-radius: 0px;
+        }
+    }
+    &__textes{
+        width: calc(100% - 50px);
+        border-bottom-left-radius: 20px; 
+        border-top-left-radius: 20px;
+        background-color: $couleurBlanche;
+        transition: 200ms;               
+    }
+    &__prix{
+        display: flex;
+        align-items: last baseline;
+        padding-bottom: 18px;
+        background-color: $couleurBlanche;
+        border-bottom-right-radius: 20px; 
+        border-top-right-radius: 20px;
+        width: 80px;
+        z-index: 1;
+        font-size: 12px;
+        font-weight: bold;
+        @media #{$iphone}{
+            font-size: 15px;
+            padding-bottom: 11px; 
+        }
+        @media #{$mobile}{
+            font-size: 15px;
+            padding-bottom: 11px;
+        }
+        @media #{$tablette}{
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+        @media #{$desktop}{
+            font-size: 22px;
+        }
+        @media #{$interdesktop}, #{$lgdesktop}{
+            padding-bottom: 10px;
+            font-size: 25px;
+        }
+    }
+    &__checkbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        width: 0px;
+	    background-color: $tertiaire;
+        font-size: 25px;
+        color:$couleurBlanche;  
+        border-bottom-right-radius: 20px; 
+        border-top-right-radius: 20px;    
+        transition: 300ms ease-in-out; 
+        @media #{$desktop}{
+            font-size: 40px;
+        } 
+        @media #{$interdesktop}, #{$lgdesktop}{
+            font-size: 40px;
+        }      
+    }
+}
+
+.checkfas{
+    display: flex;
+    margin-left: -25px; 
+    transform: rotate(-180deg);
+    transition: 1000ms ease-in-out;
+    @media #{$desktop}, #{$interdesktop}, #{$lgdesktop}{
+        margin-left: -45px;
+    }         
+}
+.groupemenu:hover .checkfas{
+    transform: rotate(0deg);
+    transition: 500ms ease-in;
+    margin-left:0%;
+}
+
+.groupemenu__textes--title,
+.groupemenu__textes--description{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 10px;    
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size:12px;
+    padding-top: 13px;
+    @media #{$iphone}{        
+        font-size: 15px;
+        padding-top: 15px;
+    }
+    @media #{$mobile}{
+        font-size: 16px;
+    }
+    @media #{$tablette}{
+        margin-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    @media #{$desktop}{
+        margin-left: 20px;
+        padding-top: 5px;
+        font-size: 22px;
+    }
+    @media #{$interdesktop}, #{$lgdesktop}{
+        margin-left: 20px;
+        padding-top: 4px;
+        font-size: 25px;
+    }
 }
