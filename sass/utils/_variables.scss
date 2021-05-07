@@ -12,7 +12,8 @@ $Shrikhand: 'Shrikhand', cursive;
 
 
 /*Responsive*/
-$iphone:"only screen and (max-width:375px)";
+$iphone5:"only screen and(min-width: 330px)";
+$iphone:"only screen and(min-width: 331px) and (max-width:375px)"; 
 $mobile:"only screen and (min-width:376px) and (max-width:599px)";
 $tablette:"only screen and (min-width:600px) and (max-width:900px)";
 $desktop:"only screen and (min-width:901px) and (max-width:1099px)";
