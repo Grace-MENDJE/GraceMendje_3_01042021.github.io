@@ -972,7 +972,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 300ms;
+  animation: loader 500ms ease-in-out infinite 135ms;
 }
 
 .loader__boule--1 {
@@ -1036,7 +1036,8 @@ a:link {
 }
 
 .mainmenu {
-  margin: 0%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .cardalafrancaise {
@@ -1429,7 +1430,7 @@ a:link {
   height: 75px;
   margin-left: 10px;
   margin-bottom: 5%;
-  animation: menu-loading 1000ms both ease-in-out 1095ms;
+  animation: menu-loading 1000ms both ease-in-out 45ms;
 }
 .groupemenu--1 {
   animation-delay: 1000ms;
