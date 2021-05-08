@@ -321,8 +321,7 @@
     }
     &__prix{
         display: flex;
-        align-items: last baseline;
-        padding-bottom: 18px;
+        padding-top: 42px;
         background-color: $couleurBlanche;
         border-bottom-right-radius: 20px; 
         border-top-right-radius: 20px;
@@ -332,22 +331,27 @@
         font-weight: bold;
         @media #{$iphone}{
             font-size: 15px;
-            padding-bottom: 11px; 
+            padding-top: 48px;
         }
         @media #{$mobile}{
             font-size: 15px;
-            padding-bottom: 11px;
+            padding-top: 45px;
         }
-        @media #{$tablette}{
-            padding-bottom: 20px;
+        @media #{$tablette}{            
             font-size: 22px;
+            padding-top: 37px;
         }
         @media #{$desktop}{
             font-size: 22px;
+            padding-top: 37px;
         }
-        @media #{$interdesktop}, #{$lgdesktop}{
-            padding-bottom: 10px;
+        @media #{$interdesktop}{
             font-size: 25px;
+            padding-top: 53px;
+        }
+        @media #{$lgdesktop}{
+            font-size: 25px;
+            padding-top: 63px;
         }
     }
     &__checkbox{

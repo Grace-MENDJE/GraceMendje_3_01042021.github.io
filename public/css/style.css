@@ -972,7 +972,7 @@ a:link {
 }
 
 .loader__boule {
-  animation: loader 500ms ease-in-out infinite 135ms;
+  animation: loader 500ms ease-in-out infinite 945ms;
 }
 
 .loader__boule--1 {
@@ -1430,7 +1430,7 @@ a:link {
   height: 75px;
   margin-left: 10px;
   margin-bottom: 5%;
-  animation: menu-loading 1000ms both ease-in-out 45ms;
+  animation: menu-loading 1000ms both ease-in-out 450ms;
 }
 .groupemenu--1 {
   animation-delay: 1000ms;
@@ -1515,8 +1515,7 @@ a:link {
 }
 .groupemenu__prix {
   display: flex;
-  align-items: last baseline;
-  padding-bottom: 18px;
+  padding-top: 42px;
   background-color: white;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -1528,30 +1527,37 @@ a:link {
 @media only screen and (min-width: 331px) and (max-width:375px) {
   .groupemenu__prix {
     font-size: 15px;
-    padding-bottom: 11px;
+    padding-top: 48px;
   }
 }
 @media only screen and (min-width:376px) and (max-width:599px) {
   .groupemenu__prix {
     font-size: 15px;
-    padding-bottom: 11px;
+    padding-top: 45px;
   }
 }
 @media only screen and (min-width:600px) and (max-width:900px) {
   .groupemenu__prix {
-    padding-bottom: 20px;
     font-size: 22px;
+    padding-top: 37px;
   }
 }
 @media only screen and (min-width:901px) and (max-width:1099px) {
   .groupemenu__prix {
     font-size: 22px;
+    padding-top: 37px;
   }
 }
-@media only screen and (min-width:1100px) and (max-width:1400px), only screen and (min-width:1401px) {
+@media only screen and (min-width:1100px) and (max-width:1400px) {
   .groupemenu__prix {
-    padding-bottom: 10px;
     font-size: 25px;
+    padding-top: 53px;
+  }
+}
+@media only screen and (min-width:1401px) {
+  .groupemenu__prix {
+    font-size: 25px;
+    padding-top: 63px;
   }
 }
 .groupemenu__checkbox {
